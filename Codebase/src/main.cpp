@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include "Functions.h"
 
 const int PWM_PIN = 11;
 
