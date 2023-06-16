@@ -10,3 +10,10 @@ void Functions::someFunction()
 {
     // Define what someFunction() does
 }
+
+WaterControl::WaterControl(double litersPerDay, int numberOfWaterings, const int relayPin)
+{
+    wateringsPerDay = numberOfWaterings;
+    pumpPin = relayPin;
+    wantedLiters = litersPerDay;
+}
