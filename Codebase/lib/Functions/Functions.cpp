@@ -20,4 +20,7 @@ void WaterControl::oneMinuteRun()
     // TODO: Implement the pump control and flow rate measurement logic here
 }
 
-void WaterControl::
+void WaterControl::setWateringsPerDay(int wateringsPerDay) : wateringsPerDay
+{
+
+}
