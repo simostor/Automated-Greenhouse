@@ -1,4 +1,5 @@
 #ifndef FUNCTIONS_H
+//#pragma once
 #define FUNCTIONS_H
 
 
@@ -10,6 +11,11 @@ class WaterControl{
 
     // Run the pump at max speed for one minute. Measure the amount of water to calculate the flowrate
     void oneMinuteRun();
+    void setWateringsPerDay(int WPD);
+    int getWateringsPerDay();
+    void setWantedLiters(double WL);
+    int getWantedLiters();
+
 
 
 

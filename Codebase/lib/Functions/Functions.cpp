@@ -19,3 +19,5 @@ void WaterControl::oneMinuteRun()
     // Run the pump at max speed for one minute. Measure the amount of water to calculate the flowrate
     // TODO: Implement the pump control and flow rate measurement logic here
 }
+
+void WaterControl::

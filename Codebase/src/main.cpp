@@ -7,6 +7,7 @@ const int MW = 7; // More water button pin
 const int LW = 8; // Less water button pin
 ezButton MORE_WATER(MW); // Creating button instance
 ezButton LESS_WATER(LW); // Creating button instance
+WaterControl pump1(10, 10, PWM_PIN);
 
 
 void setup() {
@@ -26,6 +27,11 @@ analogWrite(PWM_PIN, relayVoltage);
 
 if (MORE_WATER.isPressed())
 {
-    Serial.println("You added one liter of water");
-}
+    Serial.println("You added one liter of water. Water per day: ");
+};
+
+if (LESS_WATER.isPressed())
+{
+    Serial.println("You removed one liter of water. Water per day: ");
+};
 }
