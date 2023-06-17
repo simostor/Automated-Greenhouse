@@ -1,22 +1,15 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
-class Functions{
-    public:
-    Functions(); // Constructor
-    void someFunction();
-
-    private:
-};
 
 
 // Class is used to monitor the time, and deciding when to turn on the water pump
 class WaterControl{
     public:
-    WaterControl(double, int, const int); // Constructor
+    WaterControl(double litersPerDay, int numberOfWaterings, const int relayPin); // Constructor
 
     // Run the pump at max speed for one minute. Measure the amount of water to calculate the flowrate
-    void oneMinuteRun(){}
+    void oneMinuteRun();
 
 
 
