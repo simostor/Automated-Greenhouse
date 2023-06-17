@@ -11,9 +11,9 @@ class WaterControl{
 
     // Run the pump at max speed for one minute. Measure the amount of water to calculate the flowrate
     void oneMinuteRun();
-    void setWateringsPerDay(int WPD);
+    void setWateringsPerDay(int wateringsPerDay);
     int getWateringsPerDay();
-    void setWantedLiters(double WL);
+    void setWantedLiters(double wantedLiters);
     int getWantedLiters();
 
 
@@ -24,7 +24,7 @@ class WaterControl{
     unsigned long currentTime; 
     unsigned long interval;
     unsigned long elapsedTime;
-    double secondsPerDay = 60 * 60 * 24;
+    int secondsPerDay = 60 * 60 * 24;
 
     // Pump related
     const int pumpPin;
